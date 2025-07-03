@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICST University Park - Official Website</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #e63946;
+            --accent: #f1c40f;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            animation: fadeInDown 1.2s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header img {
+            width: 80px;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: var(--secondary);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 1rem;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 1rem auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeUp 1.2s ease-in;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form input, form select, form button {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        form button {
+            background-color: var(--secondary);
+            color: white;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: var(--accent);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="ICST Logo">
+        <h1>ICST University Park</h1>
+        <p>Your Gateway to Innovation & Excellence</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="faculties.html">Faculties</a>
+        <a href="sports.html">Sports</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="section" id="home">
+        <h2>Welcome to ICST University Park</h2>
+        <p>ICST University Park stands as a center of academic excellence, offering world-class education, groundbreaking research opportunities, and a nurturing environment for tomorrow's leaders. Join our vibrant community today.</p>
+    </section>
+
+    <footer>
+        <p>Connect with us:</p>
+        <div class="social-icons">
+            <a href="https://instagram.com"><img src="instagram-logo.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="facebook-logo.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 ICST University Park. All rights reserved.</p>
+    </footer>
+</body>
+</html>
